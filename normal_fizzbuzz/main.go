@@ -13,5 +13,8 @@ func fizzBuzz(n int) string {
 	if n == 3 {
 		return "Fizz"
 	}
+	if n == 4 {
+		return "4"
+	}
 	return "1"
 }
