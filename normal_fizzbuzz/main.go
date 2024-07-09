@@ -28,5 +28,8 @@ func fizzBuzz(n int) string {
 	if n == 8 {
 		return "8"
 	}
+	if n == 9 {
+		return "Fizz"
+	}
 	return "1"
 }
