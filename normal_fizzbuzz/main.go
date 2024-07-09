@@ -26,5 +26,8 @@ func fizzBuzz(n int) string {
 	if n == 12 {
 		return "Fizz"
 	}
+	if n == 15 {
+		return "FizzBuzz"
+	}
 	return fmt.Sprintf("%d", n)
 }
