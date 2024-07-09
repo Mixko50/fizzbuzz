@@ -15,6 +15,11 @@ func TestFizzBuzz(t *testing.T) {
 			1,
 			"1",
 		},
+		{
+			"2",
+			2,
+			"2",
+		},
 	}
 
 	for _, tc := range testCases {
