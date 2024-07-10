@@ -8,9 +8,10 @@ func main() {
 
 func fizzBuzz(num int) string {
 	output := ""
-	output += map[bool]string{num%3 == 0: "Fizz", num%3 != 0: fmt.Sprint(num)}[true]
-	if num%5 == 0 {
-		return "Buzz"
+	output += map[bool]string{num%3 == 0: "Fizz"}[true]
+	output += map[bool]string{num%5 == 0: "Buzz"}[true]
+	if output == "" {
+		return fmt.Sprint(num)
 	}
-	return fmt.Sprint(output)
+	return output
 }
