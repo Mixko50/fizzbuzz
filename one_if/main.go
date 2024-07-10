@@ -7,11 +7,10 @@ func main() {
 }
 
 func fizzBuzz(num int) string {
-	if num == 3 {
-		return "Fizz"
-	}
+	output := ""
+	output += map[bool]string{num%3 == 0: "Fizz", num%3 != 0: fmt.Sprint(num)}[true]
 	if num == 5 {
 		return "Buzz"
 	}
-	return fmt.Sprint(num)
+	return output
 }
