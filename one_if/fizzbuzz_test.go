@@ -36,9 +36,14 @@ func TestFizzBuzz(t *testing.T) {
 			"Buzz",
 		},
 		{
-			"when input is 6 should return 6",
+			"when input is 6 should return Fizz",
 			6,
 			"Fizz",
+		},
+		{
+			"when input is 7 should return 7",
+			7,
+			"7",
 		},
 	}
 
