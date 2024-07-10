@@ -13,5 +13,5 @@ func fizzBuzz(num int) string {
 	if output == "" {
 		return fmt.Sprint(num)
 	}
-	return fmt.Sprint(output)
+	return output
 }
