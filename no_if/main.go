@@ -7,5 +7,8 @@ func main() {
 }
 
 func FizzBuzz(n int) string {
-	return fmt.Sprint(n)
+	output := ""
+	output += map[bool]string{true: "Fizz"}[n%3 == 0]
+	output += map[bool]string{true: fmt.Sprint(n)}[output == ""]
+	return output
 }
