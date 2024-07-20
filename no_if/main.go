@@ -7,5 +7,5 @@ func main() {
 }
 
 func FizzBuzz(n int) string {
-	return "1"
+	return fmt.Sprint(n)
 }
