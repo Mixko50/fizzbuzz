@@ -1,1 +1,25 @@
 package main
+
+import "testing"
+
+func TestFizzBuzz(t *testing.T) {
+	tests := []struct {
+		name     string
+		input    int
+		expected string
+	}{
+		{
+			"when input is 1 should return 1",
+			1,
+			"1",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := FizzBuzz(tt.input); got != tt.expected {
+				t.Errorf("FizzBuzz() = %v, want %v", got, tt.expected)
+			}
+		})
+	}
+}
