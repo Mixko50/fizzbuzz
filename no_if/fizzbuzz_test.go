@@ -43,6 +43,11 @@ func TestFizzBuzz(t *testing.T) {
 			7,
 			"7",
 		},
+		{
+			"when input is 8 should return 8",
+			8,
+			"8",
+		},
 	}
 
 	for _, tt := range tests {
